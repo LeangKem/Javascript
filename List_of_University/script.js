@@ -4,7 +4,7 @@ const statusMsg = document.getElementById("statusMsg");
 const loaderOverlay = document.getElementById("loader-overlay");
 
 // FIX: Changed http to https
-const apiUrl = "https://universities.hipolabs.com/search?country=Cambodia";
+const apiUrl = "http://universities.hipolabs.com/search?country=Cambodia";
 
 showBtn.addEventListener("click", async () => {
   // 1. Reset table and SHOW the Blur Overlay
