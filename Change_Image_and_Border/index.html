@@ -1,55 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Scenery Images</h1>
     <p>
       <img src="images/pic1.jpg" alt="" id="main_image" />
     </p>
-    <p>
-      <button type="button" onclick="change_image('main_image','pic1')">
-        Image 1
-      </button>
-      <button type="button" onclick="change_image('main_image','pic2')">
-        Image 2
-      </button>
-      <button type="button" onclick="change_image('main_image','pic3')">
-        Image 3
-      </button>
-      <button type="button" onclick="change_image('main_image','pic4')">
-        Image 4
-      </button>
+    <p class="image-links">
+      <span onclick="change_image('main_image', 'pic1')">Pic1</span> |
+      <span onclick="change_image('main_image', 'pic2')">Pic2</span> |
+      <span onclick="change_image('main_image', 'pic3')">Pic3</span> |
+      <span onclick="change_image('main_image', 'pic4')">Pic4</span>
     </p>
     <p>
-      <button type="button" onclick="change_border('main_image','red')">
+      <button type="button" onclick="change_border('main_image', 'red')">
         Red Border
       </button>
-      <button type="button" onclick="change_border('main_image','blue')">
+      <button type="button" onclick="change_border('main_image', 'blue')">
         Blue Border
       </button>
-      <button type="button" onclick="change_border('main_image','green')">
+      <button type="button" onclick="change_border('main_image', 'green')">
         Green Border
       </button>
-      <button type="button" onclick="change_border('main_image','orange')">
+      <button type="button" onclick="change_border('main_image', 'orange')">
         Orange Border
       </button>
     </p>
     <p>
-      <button type="button" onclick="change_opacity('main_image',0.25)">
+      <button type="button" onclick="change_opacity('main_image', 0.25)">
         25% Opacity
       </button>
-      <button type="button" onclick="change_opacity('main_image',0.5)">
+      <button type="button" onclick="change_opacity('main_image', 0.5)">
         50% Opacity
       </button>
-      <button type="button" onclick="change_opacity('main_image',0.75)">
+      <button type="button" onclick="change_opacity('main_image', 0.75)">
         75% Opacity
       </button>
-      <button type="button" onclick="change_opacity('main_image',1.0)">
+      <button type="button" onclick="change_opacity('main_image', 1.0)">
         100% Opacity
       </button>
     </p>

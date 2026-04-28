@@ -12,14 +12,41 @@ body {
   margin-right: auto;
   margin-top: 5%;
 }
+
 h1 {
   color: #333;
   font-size: 50px;
   margin-bottom: 20px;
+  transition: color 0.3s; /* Smooth color change for border updates */
 }
+
 p {
   margin-bottom: 10px;
 }
+
+/* Styles for the "Pic1 | Pic2" text links */
+.image-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.image-links span {
+  cursor: pointer; /* Changes mouse to hand icon */
+  padding: 0 10px;
+  transition:
+    color 0.2s,
+    text-decoration 0.2s;
+}
+
+.image-links span:hover {
+  color: #2196f3; /* Modern blue hover color */
+  text-decoration: underline;
+}
+
+/* Updated Button Styles for Opacity and Borders */
 button {
   background-color: #4caf50;
   border: none;
@@ -30,13 +57,30 @@ button {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
+  cursor: pointer; /* Ensures pointer hand appears on buttons */
   border-radius: 5px;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
 }
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-1px); /* Slight lift effect */
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Image Styles */
 img {
   width: 600px;
   height: auto;
-  border: 2px solid #ccc;
+  border: 10px solid #ccc; /* Thicker default border */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition:
+    opacity 0.3s,
+    border-color 0.3s; /* Smooth transition for JS changes */
 }
